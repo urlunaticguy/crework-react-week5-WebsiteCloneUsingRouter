@@ -114,7 +114,7 @@ function MainForIndividual() {
       <div className=" mt-[1rem] w-[100%] h-[28rem] gap-x-2 flex rounded-[25px]">
         <div className=" cursor-pointer w-[50%] h-[100%]">
           <img
-            className=" hover:opacity-95 h-[28rem] object-cover"
+            className=" hover:opacity-95 w-[100%] h-[28rem] object-cover"
             src={dataHome[0]}
           />
         </div>
