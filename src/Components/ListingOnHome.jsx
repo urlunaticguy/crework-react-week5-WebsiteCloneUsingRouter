@@ -5,12 +5,9 @@ function ListingOnHome(props) {
   // making routing path like /listings/0
   const routingPath = "/listings/" + String(props.index);
   return (
-    <Link
-      to={routingPath}
-      className=" flex flex-col w-[18.5rem] cursor-pointer"
-    >
+    <Link to={routingPath} className=" flex flex-col w-[24%] cursor-pointer">
       <img
-        className=" w-[18.5rem] h-[18.5rem] rounded-[20px] object-cover"
+        className=" w-[100%] h-[18.5rem] rounded-[20px] object-cover"
         src={props.data[0]}
       />
       <div className=" w-[100%] flex justify-between mt-[0.5rem]">

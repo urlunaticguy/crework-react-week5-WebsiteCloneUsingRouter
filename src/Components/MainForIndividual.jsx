@@ -4,6 +4,7 @@ import HomeListings from "../Utils/HomeListings";
 import individualListingsData from "../Utils/IndividualListings";
 
 function MainForIndividual() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const { id } = useParams();
   const dataHome = HomeListings[id];
   const dataInd = individualListingsData[id];
@@ -110,8 +111,8 @@ function MainForIndividual() {
           </div>
         </div>
       </div>
-      <div className=" mt-[1rem] w-[100%] gap-x-2 flex rounded-[25px]">
-        <div className=" cursor-pointer w-[50%]">
+      <div className=" mt-[1rem] w-[100%] h-[28rem] gap-x-2 flex rounded-[25px]">
+        <div className=" cursor-pointer w-[50%] h-[100%]">
           <img
             className=" hover:opacity-95 h-[28rem] object-cover"
             src={dataHome[0]}

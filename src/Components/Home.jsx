@@ -4,6 +4,7 @@ import ListingAll from "./ListingAll";
 import Pagination from "./Pagination";
 
 function Home() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <div className=" w-[98vw] flex justify-center">
       <div className=" w-[87vw] flex flex-col justify-center">
