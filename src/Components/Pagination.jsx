@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import paginationPics from "../Utils/paginationPics";
 
 function Pagination() {
@@ -42,7 +43,7 @@ function Pagination() {
         className=" w-[90%] flex gap-[2.2rem] overflow-x-auto overflow-y-hidden no-scrollbar"
       >
         {paginationPics.map((paginationItem, index) => (
-          <div
+          <Link
             key={index}
             className=" border-b-[2px] hover:border-black cursor-pointer min-w-[auto] flex flex-col items-center justify-center"
           >
@@ -50,7 +51,7 @@ function Pagination() {
             <label className=" whitespace-nowrap cursor-pointer mt-[0.3rem] text-[0.75rem] text-slate-500 hover:text-black font-semibold mb-[0.5rem]">
               {paginationItem[1]}
             </label>
-          </div>
+          </Link>
         ))}
       </div>
 

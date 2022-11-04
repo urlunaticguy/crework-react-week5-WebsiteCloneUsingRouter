@@ -5,8 +5,8 @@ import Pagination from "./Pagination";
 
 function Home() {
   return (
-    <div className=" w-[100vw] flex justify-center">
-      <div className=" w-[89vw] flex flex-col justify-center">
+    <div className=" w-[98vw] flex justify-center">
+      <div className=" w-[87vw] flex flex-col justify-center">
         <Header />
         <Pagination />
         <ListingAll />
