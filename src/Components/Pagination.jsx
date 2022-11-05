@@ -40,7 +40,7 @@ function Pagination() {
       {/* main pagination div goes here */}
       <div
         ref={divRef}
-        className=" w-[90%] flex gap-[2.2rem] overflow-x-auto overflow-y-hidden no-scrollbar"
+        className=" w-[90%] flex gap-[3rem] overflow-x-auto overflow-y-hidden no-scrollbar"
       >
         {paginationPics.map((paginationItem, index) => (
           <Link
