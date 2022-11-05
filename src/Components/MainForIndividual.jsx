@@ -8,7 +8,7 @@ function MainForIndividual() {
   const { id } = useParams();
   const dataHome = HomeListings[id];
   const dataInd = individualListingsData[id];
-  const price = dataHome[4].slice(1);
+  const price = dataHome[4];
   const checkComma = price.indexOf(",");
   let price1 = 0;
   if (checkComma === 2) {
@@ -111,18 +111,30 @@ function MainForIndividual() {
           </div>
         </div>
       </div>
-      <div className=" mt-[1rem] w-[100%] h-[28rem] gap-x-2 flex rounded-[25px]">
+      <div className=" mt-[1rem] w-[100%] h-[28rem] gap-x-2 flex">
         <div className=" cursor-pointer w-[50%] h-[100%]">
           <img
-            className=" hover:opacity-95 w-[100%] h-[28rem] object-cover"
+            className=" rounded-l-xl hover:opacity-95 w-[100%] h-[28rem] object-cover"
             src={dataHome[0]}
           />
         </div>
-        <div className=" cursor-pointer w-[50%] flex gap-x-[0.5rem] gap-y-[0.12rem] flex-wrap">
-          <img className=" hover:opacity-95 w-[49%] h-[49%]" src={dataInd[2]} />
-          <img className=" hover:opacity-95 w-[49%] h-[49%]" src={dataInd[3]} />
-          <img className=" hover:opacity-95 w-[49%] h-[49%]" src={dataInd[4]} />
-          <img className=" hover:opacity-95 w-[49%] h-[49%]" src={dataInd[5]} />
+        <div className=" cursor-pointer w-[50%] flex gap-x-[0.5rem] gap-y-[0.5rem] flex-wrap">
+          <img
+            className=" hover:opacity-95 w-[49%] h-[13.75rem]"
+            src={dataInd[2]}
+          />
+          <img
+            className=" rounded-tr-xl hover:opacity-95 w-[49%] h-[13.75rem]"
+            src={dataInd[3]}
+          />
+          <img
+            className=" hover:opacity-95 w-[49%] h-[13.75rem]"
+            src={dataInd[4]}
+          />
+          <img
+            className=" rounded-br-xl hover:opacity-95 w-[49%] h-[13.75rem]"
+            src={dataInd[5]}
+          />
         </div>
       </div>
       <div className=" w-[100%] mt-[2.2rem] flex">
@@ -232,7 +244,7 @@ function MainForIndividual() {
             <div className=" flex justify-between items-end">
               <div>
                 <span className=" text-[1.3rem] font-semibold">
-                  {dataHome[4]}
+                  ₹{dataHome[4]}
                 </span>
                 <span className=" text-slate-700"> night</span>
               </div>
@@ -305,7 +317,7 @@ function MainForIndividual() {
             <div className=" text-slate-700 mt-[1rem] gap-[1rem] w-[100%] flex flex-col">
               <div className=" flex justify-between">
                 <span className=" cursor-pointer underline">
-                  {dataHome[4]} × 5 nights
+                  ₹{dataHome[4]} × 5 nights
                 </span>
                 <span>₹{priceStr}</span>
               </div>

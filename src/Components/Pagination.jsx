@@ -44,6 +44,7 @@ function Pagination() {
       >
         {paginationPics.map((paginationItem, index) => (
           <Link
+            to={"/categories/" + index}
             key={index}
             className=" border-b-[2px] hover:border-black cursor-pointer min-w-[auto] flex flex-col items-center justify-center"
           >
