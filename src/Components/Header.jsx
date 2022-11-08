@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className=" w-[100%] h-[5rem] flex items-center">
-      <div className=" hidden sm:w-[33.33%] sm:flex sm:items-center">
+    <div className=" w-[100%] h-[5rem] flex flex-col mb-[2.5rem] sm:mb-0 sm:flex-row items-center">
+      <div className=" w-[100%] sm:w-[33.33%] flex my-[0.7rem] sm:my-0 sm:items-center justify-center">
         <Link to="/">
           <svg
             className=" cursor-pointer w-[2rem] fill-[#fe395d]"
