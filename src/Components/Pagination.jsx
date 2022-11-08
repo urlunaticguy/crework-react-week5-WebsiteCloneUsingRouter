@@ -14,12 +14,13 @@ function Pagination() {
   };
 
   return (
-    <div className=" mt-[2rem] w-[100%] h-[4.5rem] flex items-center justify-center">
+    <div className=" border-y-[1px] border-slate-300 sm:border-y-0 py-12 sm:py-0 sm:mt-[2rem] w-[100%] h-[4.5rem] flex items-center justify-center">
       {/* left chevron svg goes here */}
       <div
         onClick={() => {
           scrollClick(divRef.current, -scrollAmount);
         }}
+        className=" hidden sm:block"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +62,7 @@ function Pagination() {
         onClick={() => {
           scrollClick(divRef.current, scrollAmount);
         }}
+        className=" hidden sm:block"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

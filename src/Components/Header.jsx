@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className=" w-[100%] h-[5rem] flex">
-      <div className=" w-[33.33%] flex items-center">
+    <div className=" w-[100%] h-[5rem] flex items-center">
+      <div className=" hidden sm:w-[33.33%] sm:flex sm:items-center">
         <Link to="/">
           <svg
             className=" cursor-pointer w-[2rem] fill-[#fe395d]"
@@ -21,13 +21,19 @@ function Header() {
         </Link>
       </div>
 
-      <div className=" w-[33.33%] flex items-center justify-center">
+      <div className=" w-[100%] sm:w-[33.33%] sm:flex sm:items-center justify-center">
         <div className=" cursor-pointer flex items-center justify-center rounded-full border-[0.2px] border-slate-400 py-[0.25rem] text-[0.9rem] shadow-sm hover:shadow-slate-400">
-          <span className=" ml-[1.3rem] font-semibold">Anywhere</span>
+          <span className=" ml-[1.3rem] font-semibold text-[0.75rem] sm:text-[0.9rem]">
+            Anywhere
+          </span>
           <span className=" ml-[0.8rem] text-slate-300">|</span>
-          <span className=" ml-[0.8rem] font-semibold">Any week</span>
+          <span className=" ml-[0.8rem] font-semibold text-[0.75rem] sm:text-[0.9rem]">
+            Any week
+          </span>
           <span className=" ml-[0.8rem] text-slate-300">|</span>
-          <span className=" ml-[0.8rem] font-extralight">Add guests</span>
+          <span className=" ml-[0.8rem] font-extralight text-[0.75rem] sm:text-[0.9rem]">
+            Add guests
+          </span>
           <div className=" ml-[0.8rem] mr-[0.5rem] border-[0.5rem] border-[#fe395d] rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +53,7 @@ function Header() {
         </div>
       </div>
 
-      <div className=" w-[33.33%] flex items-center justify-end">
+      <div className=" hidden sm:w-[33.33%] sm:flex sm:items-center sm:justify-end">
         <span className=" text-[0.9rem] font-semibold cursor-pointer px-3 py-2 hover:bg-[#f4f1f1] rounded-full">
           Become a host
         </span>

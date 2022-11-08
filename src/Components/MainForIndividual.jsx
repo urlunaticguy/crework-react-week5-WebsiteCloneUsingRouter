@@ -39,12 +39,12 @@ function MainForIndividual() {
   let totalStr = returnNumber(total);
 
   return (
-    <div className=" w-[100%] mt-[1rem]">
+    <div className=" w-[100%] sm:mt-[1rem]">
       <div className=" flex flex-col">
-        <span className=" w-[100%] text-[1.7rem] font-semibold">
+        <span className=" mb-[0.8rem] sm:mb-0 flex justify-center sm:justify-start text-center w-[100%] text-[1.4rem] sm:text-[1.7rem] font-semibold">
           {dataInd[0]}
         </span>
-        <div className=" w-[100%] flex justify-between">
+        <div className=" w-[100%] flex flex-col flex-wrap sm:flex-row items-center justify-between">
           <div className=" text-[0.8rem] font-semibold flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,14 +111,14 @@ function MainForIndividual() {
           </div>
         </div>
       </div>
-      <div className=" mt-[1rem] w-[100%] h-[28rem] gap-x-2 flex">
-        <div className=" cursor-pointer w-[50%] h-[100%]">
+      <div className=" mt-[1rem] w-[100%] h-[20rem] sm:h-[28rem] gap-x-2 flex">
+        <div className=" flex px-[1rem] sm:px-0 justify-center w-[100%] cursor-pointer sm:w-[50%] h-[100%]">
           <img
-            className=" rounded-l-xl hover:opacity-95 w-[100%] h-[28rem] object-cover"
+            className=" rounded-r-xl sm:rounded-r-none rounded-l-xl hover:opacity-95 w-[100%] h-[20rem] sm:h-[28rem] object-cover"
             src={dataHome[0]}
           />
         </div>
-        <div className=" cursor-pointer w-[50%] flex gap-x-[0.5rem] gap-y-[0.5rem] flex-wrap">
+        <div className=" hidden cursor-pointer w-[50%] sm:flex gap-x-[0.5rem] gap-y-[0.5rem] flex-wrap">
           <img
             className=" hover:opacity-95 w-[49%] h-[13.75rem]"
             src={dataInd[2]}
@@ -137,11 +137,11 @@ function MainForIndividual() {
           />
         </div>
       </div>
-      <div className=" w-[100%] mt-[2.2rem] flex">
-        <div className=" w-[68%] flex flex-col">
+      <div className=" w-[100%] mt-[2.2rem] flex flex-col flex-wrap sm:flex-row">
+        <div className=" w-[100%] sm:w-[68%] flex flex-col items-center">
           <div className=" text-[1.5rem] font-semibold">{dataInd[6]}</div>
           <div className=" text-slate-700">{dataInd[7]}</div>
-          <div className=" w-[85%] flex flex-col gap-6 mt-[2rem] py-[2rem] border-y-2 border-slate-200">
+          <div className=" w-[85%] flex flex-col gap-6 mt-[2rem] py-[2rem] border-y-2 border-slate-200 items-justify">
             <div className=" flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ function MainForIndividual() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-[2rem]"
+                className=" w-[3rem] sm:w-[2rem]"
               >
                 <path
                   strokeLinecap="round"
@@ -215,33 +215,37 @@ function MainForIndividual() {
             </div>
           </div>
           <div className=" w-[85%] mt-[1rem] flex flex-col pb-[1rem] border-b-2 border-slate-200">
-            <div className=" text-[2rem] font-bold">
+            <div className=" text-[2rem] font-bold text-center sm:text-start">
               <span className=" text-[#fd3a5c]">air</span>
               <span>cover</span>
             </div>
-            <span className=" mt-[0.5rem]">
+            <span className=" mt-[0.5rem] text-center sm:text-start">
               Every booking includes free protection from Host cancellations,
               listing inaccuracies, and other issues like trouble checking in.
             </span>
-            <div className=" mt-[0.5rem] underline font-semibold">
+            <div className=" mt-[0.5rem] underline font-semibold text-center sm:text-start">
               Learn more
             </div>
           </div>
-          <div className=" w-[85%] mt-[1rem] mb-[3rem] flex flex-col pb-[1rem] border-b-2 border-slate-200">
-            <span className=" text-[1.5rem] font-semibold">
+          <div className=" w-[85%] mt-[1rem] sm:mb-[3rem] flex flex-col pb-[1rem] border-b-2 border-slate-200">
+            <span className=" text-[1.5rem] font-semibold text-center sm:text-start">
               Where you'll sleep
             </span>
             <img
               className=" cursor-pointer my-[1.2rem] w-[20rem] h-[13rem] object-cover rounded-xl"
               src={dataInd[8]}
             />
-            <span className=" font-semibold">Bedroom area</span>
-            <span className=" text-[0.9rem] font-normal">1 queen bed</span>
+            <span className=" font-semibold text-center sm:text-start">
+              Bedroom area
+            </span>
+            <span className=" text-[0.9rem] font-normal text-center sm:text-start">
+              1 queen bed
+            </span>
           </div>
         </div>
-        <div className=" w-[32%] flex flex-col">
+        <div className=" w-[100%] sm:w-[32%] flex flex-col">
           <div className=" px-[1.5rem] py-[2rem] flex flex-col rounded-xl shadow-xl shadow-slate-300 mt-[1rem] w-[100%] h-[32rem] border-[1px] border-slate-300">
-            <div className=" flex justify-between items-end">
+            <div className=" flex flex-col sm:flex-row justify-between items-start sm:items-end">
               <div>
                 <span className=" text-[1.3rem] font-semibold">
                   ₹{dataHome[4]}
@@ -308,7 +312,7 @@ function MainForIndividual() {
                 </svg>
               </div>
             </div>
-            <div className=" cursor-pointer hover:bg-[#ce094e] flex items-center justify-center text-white font-semibold mt-[1rem] h-[3rem] w-[100%] rounded-lg bg-[#e21a5f]">
+            <div className=" cursor-pointer hover:bg-[#ce094e] flex items-center justify-center text-white font-semibold mt-[1rem] min-h-[3rem] w-[100%] rounded-lg bg-[#e21a5f]">
               Reserve
             </div>
             <div className=" mt-[0.7rem] w-[100%] flex items-center justify-center text-[0.9rem] text-slate-800">

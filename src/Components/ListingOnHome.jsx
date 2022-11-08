@@ -8,7 +8,7 @@ function ListingOnHome(props) {
     <Link
       to={routingPath}
       target="_blank"
-      className=" flex flex-col w-[24%] cursor-pointer"
+      className=" flex flex-col w-[100%] sm:w-[24%] cursor-pointer"
     >
       <img
         className=" w-[100%] h-[18.5rem] rounded-[20px] object-cover"

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className=" w-[100%] h-[5rem] flex">
-      <div className=" w-[33.33%] flex items-center">
+    <div className=" w-[100%] h-[5rem] flex sm:flex-row flex-col mt-[1rem] sm:mt-0 mb-[2rem] sm:mb-0">
+      <div className=" w-[100%] sm:w-[33.33%] flex items-center justify-center sm:justify-start mb-[1rem] sm:mb-0">
         <Link to="/">
           <svg
             className=" cursor-pointer w-[2rem] fill-[#fe395d]"
@@ -22,7 +22,7 @@ function Header() {
         </Link>
       </div>
 
-      <div className=" w-[33.33%] flex items-center justify-center">
+      <div className=" w-[100%] sm:w-[33.33%] flex items-center justify-center">
         <div className=" w-[19rem] cursor-pointer flex items-center justify-between rounded-full border-[0.2px] border-slate-400 py-[0.25rem] text-[0.9rem] shadow-sm hover:shadow-slate-400">
           <span className=" ml-[1.3rem] font-semibold text-[0.9rem]">
             Start your search
@@ -46,7 +46,7 @@ function Header() {
         </div>
       </div>
 
-      <div className=" w-[33.33%] flex items-center justify-end">
+      <div className=" hidden w-[33.33%] sm:flex items-center justify-end">
         <span className=" text-[0.9rem] font-semibold cursor-pointer px-3 py-2 hover:bg-[#f4f1f1] rounded-full">
           Become a host
         </span>
